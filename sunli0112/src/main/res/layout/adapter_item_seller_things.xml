@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/coners"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+    <CheckBox
+        android:id="@+id/item_things_check_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/item_things_icon_product"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/item_things_check_product"></com.facebook.drawee.view.SimpleDraweeView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/item_things_icon_product">
+
+        <TextView
+            android:id="@+id/item_things_text_product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textColor="#222222"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/item_things_text_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:layout_marginRight="20dp"/>
+
+            <!--<com.sunli.sunli1218.CustomCounterView
+                android:id="@+id/custom_things_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/item_things_text_product_price" />-->
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>
